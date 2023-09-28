@@ -1,0 +1,21 @@
+/* fonts */
+@import url('../assets/fonts/open-sans/index.css');
+/* base */
+@import url('./base.css');
+/* blocks */
+@import url('./blocks/header.css');
+@import url('./blocks/footer.css');
+@import url('./blocks/navigation.css');
+@import url('./blocks/callback.css');
+@import url('./blocks/sec-welcome.css');
+@import url('./blocks/sec-about.css');
+@import url('./blocks/sec-promo.css');
+@import url('./blocks/sec-dishes.css');
+@import url('./blocks/sec-menu.css');
+@import url('./blocks/sec-reviews.css');
+@import url('./blocks/sec-gallery.css');
+@import url('./blocks/sec-cooks.css');
+@import url('./blocks/basket-modal.css');
+
+/* media */
+@import url('./mediaQuery.css');

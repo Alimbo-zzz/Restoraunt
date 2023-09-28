@@ -1,0 +1,66 @@
+
+
+.basket{
+	display: flex;
+	flex-direction: column;
+	gap:30px;
+}
+
+.basket .basket__foot{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+
+.basket button[type='reset']{
+	background: none;
+	border: none;
+	color: #FFA500;
+	cursor: pointer;
+	font-size: 1.1em;
+	transition: 0.2s;
+	border-bottom: 2px solid transparent;
+}
+
+.basket button[type='reset']:hover{
+	border-bottom: 2px solid ;
+}
+
+
+.basket .basket__list{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	list-style: none;
+}
+
+
+.basket .basket__item{
+	display: grid;
+	align-items: center;
+	gap: 5px;
+	grid-template-columns: 1fr 50px 30px min-content min-content min-content;
+}
+
+.basket button[name='item-remove']{
+	justify-self: end;
+	margin-left: 20px;
+}
+
+.basket button[name]{
+	background: #FFA500;
+	border: none;
+	aspect-ratio: 1/1;
+	color: #fff;
+	width: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+
+.basket .basket__final{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

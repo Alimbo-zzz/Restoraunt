@@ -1,0 +1,23 @@
+.sec-welcome{
+	color: #D67E35;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.sec-welcome-cont{
+
+}
+
+
+.sec-welcome__intro{
+	text-align: center;
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.sec-welcome__intro h2{font-size: 30px;}
+.sec-welcome__intro h1{font-size: 60px;}

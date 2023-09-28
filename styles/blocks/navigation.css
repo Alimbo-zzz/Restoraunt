@@ -1,0 +1,41 @@
+
+
+.navigation{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.navigation__link img{
+	width: 25px; 
+	object-fit: cover;
+}
+
+
+.navigation__link{
+	font-family: "Open Sans";
+	text-decoration: none;
+	padding: 5px 15px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	display: block;
+	position: relative;
+	transition: 0.3s;
+	white-space: nowrap;
+}
+
+.navigation__link::before{
+	content: '';
+	position: absolute;
+	bottom: 0; left: 50%;
+	transform: translateX(-50%) scaleX(0);
+	width: 90%; height: 2px;
+	background: currentColor;
+	transition: inherit;
+}
+
+.navigation__link:hover::before{
+	transform: translateX(-50%) scaleX(1);
+}

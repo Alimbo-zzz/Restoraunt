@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Restaurant</title>
+	<!-- plugins -->
+	<link rel="stylesheet" href="./plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./plugins/swiper/styles.css">
+	<link rel="stylesheet" href="./plugins/modalWindow/styles.css">
+	<script src="./plugins/swiper/swiper-bundle.min.js" defer></script>
+	<script src="./plugins/modalWindow/index.js" defer></script>
+	<!-- src -->
+	<link rel="stylesheet" href="./styles/index.css">
+	<script src="./scripts/globalVars.js" defer></script>
+	<script src="./scripts/aboutCardsRender.js" defer></script>
+	<script src="./scripts/dishesGallery.js" defer></script>
+	<script src="./scripts/menuSlider.js" defer></script>
+	<script src="./scripts/reviewsSlider.js" defer></script>
+	<script src="./scripts/galleryImages.js" defer></script>
+	<script src="./scripts/orderModal.js" defer></script>
+	<script src="./scripts/basketModal.js" defer></script>
+	<script src="./scripts/headerHamburger.js" defer></script>
+</head>
+<body>
+	<div class="wrapper" id="main">
+		<img src="./assets/images/main-bg.png" class="main-bg">
+		<header class="header">
+			<div class="container header-cont">
+				<div class="header__logo">
+					<img src="./assets/icons/logo.svg" >
+				</div>
+				<div class="header__block">
+					<nav class="navigation">
+						<a href="#main" class="navigation__link">Главная</a>
+						<a href="#menu" class="navigation__link">Меню</a>
+						<a href="#about" class="navigation__link">О нас</a>
+						<a href="#reviews" class="navigation__link">Отзывы</a>
+						<a href="#cart" class="navigation__link basket-btn response-hidden" data-elements="0">
+							<img src="./assets/icons/cart.svg" alt="">
+						</a>						
+					</nav>
+					<span class="_line"></span>
+					<div class="callback">
+						<div class="callback__block">
+							<a href="" class="callback__phone">
+								<img src="./assets/icons/phone.svg"> +999-888-76-54
+							</a>
+							<p class="text">Свяжитесь с нами для бронирования</p>
+						</div>
+						<button class="btn" data-btn="order">Заказ сТоЛиКа</button>
+					</div> 
+					<a href="#cart" class="navigation__link basket-btn response-visible" data-elements="0">
+						<img src="./assets/icons/cart.svg" alt="">
+					</a>		
+				</div>
+				<div class="header-hamburger" data-active="false">
+					<span></span>
+				</div>
+			</div>
+		</header>
+		<section id="welcome" class="sec-welcome">
+			<div class="container sec-welcome-cont">
+				<div class="sec-welcome__intro">
+					<h2>Добро пожаловать в</h2>
+					<h1>Наш ресторан</h1>
+					<p class="decor-text">ДОМ ЛуЧШеЙ ЕДЫ</p>
+					<button class="btn">Показать Больше</button>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<div class="container about-cont">
+				<ul class="about-cards">
+					<!-- <li class="about-cards__item">
+						<img src="./assets/icons/cake.svg">
+						<h4 class="title">Магическая <span class="_decor">Атмосфера</span> </h4>
+						<p class="text">В нашем заведении царит магическая атмосфер	наполненная вкусными ароматами</p>
+					</li> -->
+				</ul>
+
+				<div class="history">
+					<div class="history__block" data-block="info">
+						<h2 class="title">Наша <span class="_decor">История</span></h2>
+						<p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum omnis dolorum, reprehenderit delectus aspernatur repudiandae minus facere ad dicta magni a, aliquam voluptate temporibus sed eum dolores labore tempore incidunt. Distinctio tenetur atque quas alias ratione dolores repellendus exercitationem delectus, ea ex ad enim cum error nihil odio vero at!</p>
+						<ul class="history__tags">
+							<li class="history__tag">
+								<div class="count">93</div>
+								<p class="text _bold">Напитки</p>
+							</li>
+							<li class="history__tag">
+								<div class="count">206</div>
+								<p class="text _bold">Еда</p>
+							</li>
+							<li class="history__tag">
+								<div class="count">71</div>
+								<p class="text _bold">Закуски</p>
+							</li>
+						</ul>
+					</div>
+					<div class="history__block" data-block="collage">
+						<div class="history__collage">					
+							<img data-img="1" src="./assets/images/collage/1.png">
+							<img data-img="2" src="./assets/images/collage/2.png">
+							<img data-img="3" src="./assets/images/collage/3.png">
+							<img data-img="4" src="./assets/images/collage/4.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="promo" class="sec-promo">
+			<img src="./assets/images/cake_salad.png" class="sec-promo__bg">
+			<div class="container promo-cont">
+				<div class="sec-promo__info">
+					<h2 class="title"><span class="_decor">Отпразнуйте в одном из самых лучших ресторанов.</span></h2>
+					<p class="text _bold">Только в этом месяце бизнез-ланч от 250₽</p>
+				</div>
+				<button class="btn" data-btn="order">Заказ столика</button>
+			</div>
+		</section>
+		<section id="dishes" class="sec-dishes">
+			<div class="container dishes-cont">
+				<h2 class="title">Наши <span class="_decor">Блюда</span></h2>
+				<div class="dishes-gallery">
+					<div class="dishes-gallery__preview">
+						<img src="./assets/images/dishes/1.png" alt="">
+					</div>
+					<ul class="dishes-gallery__list">
+						<!-- <li class="dishes-gallery__item" data-active="true">
+							<img src="./assets/images/dishes/1.png">
+							<p data-name="name" class="dishes-gallery__text">Гамбургер мини</p>
+							<p data-name="price" class="dishes-gallery__text">250₽</p>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="menu" class="sec-menu">
+			<img src="./assets/images/bar.png" class="sec-menu__bg">
+			<div class="container">
+				<h2 class="title">Наше меню</h2>
+				<div class="menu">
+
+					<!-- <div class="card-menu">
+						<div class="card-menu__container">
+							<div class="card-menu__preview">
+								<img src="./assets/images/menu/burger_bbq.png">
+								<span class="card-menu__price">420</span>
+							</div>
+							<h4 class="card-menu__title">Гамбургер</h4>
+							<p class="text">Сочный! Мощный!</p>
+							<button class="btn">Заказать</button>
+						</div>						
+					</div> -->
+
+				</div>
+			</div>
+		</section>
+		<section id="reviews" class="sec-reviews">
+			<div class="container">
+				<div class="reviews">
+					<!-- <div class="reviews-item">
+						<p class="reviews-item__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus porro laboriosam aut reprehenderit, commodi sint corrupti error dolores tempora sunt hic alias repellat maxime fuga ab ea sed facere! Totam, officiis fugit at voluptas blanditiis eaque exercitationem sequi, corrupti illo amet ullam, quaerat quam saepe recusandae nulla non cum iste?</p>
+						<img src="./assets/images/reviews/1.jpg" class="reviews-item__avatar">
+						<div class="reviews-item__status">Посетитель</div>
+						<div class="reviews-item__name">Николай</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+		<section id="gallery" class="sec-gallery">			
+			<div class="container"> 
+				<h2 class="title">Галерея <span class="_decor">Блюд</span></h2> 
+			</div>
+			<div class="gallery">
+				<div class="gallery__decor"></div>
+				<div class="container gallery__grid">
+					<img alt="image 1" src="./assets/images/gallery/1.jpg" >
+					<img alt="image 2" src="./assets/images/gallery/3.jpg" >
+					<img alt="image 3" src="./assets/images/gallery/2.jpg" class="_2">
+					<img alt="image 4" src="./assets/images/gallery/1.jpg" >
+					<img alt="image 5" src="./assets/images/gallery/3.jpg" >
+					<img alt="image 6" src="./assets/images/gallery/2.jpg" class="_2">
+				</div>
+			</div>
+		</section>
+		<section id="cooks" class="sec-cooks">
+			<div class="container">
+				<h2 class="title">Наши <span class="_decor">Повара</span></h2>
+				<div class="cooks">
+					<img src="./assets/images/cooks/1.png" alt="">
+					<img src="./assets/images/cooks/2.png" alt="">
+					<img src="./assets/images/cooks/3.png" alt="">
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<img class="footer__bg" src="./assets/images/footer_bg.png">
+			<div class="container footer__grid">
+				<img class="footer__logo" src="./assets/icons/logo.svg" >
+				<div class="footer__created">© Restaurant 2023</div>
+				<a target="_blank" href="mailto:restaurant@gmail.com" class="footer__mail">restaurant@gmail.com</a>
+				<span class="footer__address">Moscow, st Pushkin, 23</span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

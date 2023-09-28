@@ -1,0 +1,32 @@
+.swiper-button-next::after{
+	content: '';
+}
+.swiper-button-prev::after{
+	content: '';
+}
+
+.swiper-button-prev, .swiper-button-next{
+	color: #fff;
+	background: #FFA500;
+	border: none;
+	width: 3.5em;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 0 10px 1px rgba(22,22,22,0.2);
+	transition: 0.2s;
+}
+
+
+.swiper-button-prev:active, .swiper-button-next:active{
+	transform: scale(0.8);
+}
+
+
+.swiper-pagination._styles{
+	bottom: 0;
+}
+
+.swiper-pagination-bullet{
+	background: #FFA500;
+}
